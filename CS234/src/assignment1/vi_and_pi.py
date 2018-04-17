@@ -151,7 +151,8 @@ def value_iteration(P, nS, nA, gamma=0.9, max_iteration=20, tol=1e-3):
 	----------
 	P: dictionary
 		It is from gym.core.Environment
-		P[state][action] is tuples with (probability, nextstate, reward, terminal)
+		.
+
 	nS: int
 		number of states
 	nA: int
