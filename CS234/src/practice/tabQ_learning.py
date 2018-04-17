@@ -3,6 +3,7 @@ import gym
 import time
 from practice.lake_envs import *
 from tqdm import tqdm
+from matplotlib.pyplot import plot
 
 
 def learn_Q_QLearning(env, num_episodes=5000, gamma=0.95, lr=0.1, e=0.8, decay_rate=0.99):
@@ -38,6 +39,7 @@ def learn_Q_QLearning(env, num_episodes=5000, gamma=0.95, lr=0.1, e=0.8, decay_r
 
     Q = np.zeros((env.nS, env.nA))
     policy = np.zeros((env.nS, env.nA))
+    avarage = []
     for _ in tqdm(range(num_episodes)):
         S = env.reset()
         done = False
@@ -66,7 +68,8 @@ def learn_Q_QLearning(env, num_episodes=5000, gamma=0.95, lr=0.1, e=0.8, decay_r
             count += 1
             S = S_
         # print(score / count)
-
+        avarage.append(score/count)
+    # plot(avarage[:1000])
     return Q
 
 
