@@ -7,10 +7,10 @@ import sys
 from gym import wrappers
 from collections import deque
 
-from utils.general import get_logger, Progbar, export_plot
-from utils.replay_buffer import ReplayBuffer
-from utils.preprocess import greyscale
-from utils.wrappers import PreproWrapper, MaxAndSkipEnv
+from assignment2.starter_code.utils.general import get_logger, Progbar, export_plot
+from assignment2.starter_code.utils.replay_buffer import ReplayBuffer
+from assignment2.starter_code.utils.preprocess import greyscale
+from assignment2.starter_code.utils.wrappers import PreproWrapper, MaxAndSkipEnv
 
 
 class QN(object):

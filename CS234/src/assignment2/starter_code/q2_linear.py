@@ -1,12 +1,12 @@
 import tensorflow as tf
 import tensorflow.contrib.layers as layers
 
-from utils.general import get_logger
-from utils.test_env import EnvTest
-from core.deep_q_learning import DQN
-from q1_schedule import LinearExploration, LinearSchedule
+from assignment2.starter_code.utils.general import get_logger
+from assignment2.starter_code.utils.test_env import EnvTest
+from assignment2.starter_code.core.deep_q_learning import DQN
+from assignment2.starter_code.q1_schedule import LinearExploration, LinearSchedule
 
-from configs.q2_linear import config
+from assignment2.starter_code.configs.q2_linear import config
 
 
 class Linear(DQN):

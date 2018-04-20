@@ -1,11 +1,11 @@
 import gym
-from utils.preprocess import greyscale
-from utils.wrappers import PreproWrapper, MaxAndSkipEnv
+from assignment2.starter_code.utils.preprocess import greyscale
+from assignment2.starter_code.utils.wrappers import PreproWrapper, MaxAndSkipEnv
 
-from q1_schedule import LinearExploration, LinearSchedule
-from q2_linear import Linear
+from assignment2.starter_code.q1_schedule import LinearExploration, LinearSchedule
+from assignment2.starter_code.q2_linear import Linear
 
-from configs.q4_train_atari_linear import config
+from assignment2.starter_code.configs.q4_train_atari_linear import config
 
 """
 Use linear approximation for the Atari game. Please report the final result.

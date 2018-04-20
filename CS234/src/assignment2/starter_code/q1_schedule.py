@@ -1,5 +1,5 @@
 import numpy as np
-from utils.test_env import EnvTest
+from assignment2.starter_code.utils.test_env import EnvTest
 
 
 class LinearSchedule(object):
